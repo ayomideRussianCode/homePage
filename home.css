@@ -1,0 +1,1826 @@
+@font-face {
+    font-family:"Product sans";
+    src: url(./product-sans/Product\ Sans\ Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Product Sans";
+} 
+html , body{
+    width: 100%;
+    margin: 0 ;
+    padding: 0;
+    overflow-x: hidden;
+}
+.row{
+    /* width: 100%;
+    height: 100%; */
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 10px 0 10px 0;
+    background-color: #ffff;
+    font-family: "Product Sans";
+}
+.bakerylogo{
+    margin-left: 140px;
+}
+ ul li a{
+    font-family: "Product Sans";
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 14px;
+    color: #404c60;
+ }
+ .faqs, .login, .createacct{
+    margin-top: 10px;
+ }
+ .faqs, .login{
+    margin-right: -200px;
+ }
+ .createacct a{
+    color: #ffff;
+    border-radius: 10px;
+    background: #ce0639;
+    padding: 14px 30px;
+    line-height: 18px;
+    font-family: "Product Sans medium";
+    font-weight: 500;
+    font-size: 15px;
+    margin-right: 10px;
+ }
+ .img{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(95, 86, 86, 0.8) 0.21%, rgba(126, 119, 119, 0.80443) 29.72%, rgba(225, 255, 255,0)55.34%), url(./figma/bakeryimage.jpg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+ }
+ .txt{
+    font-family: "Product sans";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #ffff;
+    align-items: center;
+    line-height: 30px;
+    margin-left: 175px;
+    padding-top: 200px;
+ }
+ .txt2{
+    font-family: "Product sans";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #ffff;
+    align-items: center;
+    line-height: 100px;
+    margin-left: 175px;
+}
+.imgtxt{
+    width: 600px;
+    font-family: "Product sans Light";
+    padding: 0 60px 60px 80px; 
+    margin-left: 100px;
+    font-weight: light;
+    font-style: normal;
+    font-size: 20px;
+    color: #ffff;
+    line-height: 30px;
+    align-items: center; 
+}
+.img li{
+    display: flex;
+    padding: 50px 0 0 50px;
+    list-style: none;
+}
+.content p{
+    text-align: center;
+    font-size: 30px;
+    font-family: "Product sans";
+    color: #2b2b2b;
+    padding-top: 50px 0 50px 0;
+    background-color: #e5e5e5;
+}
+.CTA{
+    margin-left: 130px;
+    margin-top: -80px;
+}
+.CTA a{
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    color: #ffff;
+    border-radius: 10px;
+    background: #ce0639;
+    padding: 14px 30px;
+    line-height: 18px;
+    font-family: "Product sans medium";
+    font-weight: 500;
+    font-size: 15px;
+
+}
+.content{
+    background-color: #e5e5e5;
+    padding:50px 0 50px 0;
+}
+.stylecontent{
+    color: #ce0639;
+}
+.blogsection{
+    background-color: #e5e5e5;
+    box-sizing: border-box;
+    line-height: 60px;
+    font-family: "Product sans";
+    font-weight: 700;
+    font-size: 44px;
+    color: #2b2b2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 70%;
+    margin: 0 auto;
+    height: 100%;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+.card{
+    overflow: hidden;
+    padding: 20px;
+    background-color: #ffff;
+    box-shadow: rgba(121, 102, 107, 0.1);
+    border-radius: 20px;
+}
+.cardicon{
+    width:100%;
+    height:auto;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+.cardbody{
+    padding:20px 20px 10px 20px;
+    font-weight:300;
+    font-family: "Product Sans";
+    line-height: 24px;
+    font-size: 16px;
+}
+h5{
+    padding-bottom: 15px;
+    color: #5b5b5b;
+    font-family:"Product Sans";
+    font-weight: 700;
+    font-style: normal;
+    line-height: 28px;
+    font-size: 20px;
+}
+.cardtxt{
+    font-family: "Product Sans Light";
+    font-weight: 300;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+    color: #979797;
+}
+.wrapper{
+    position: relative;
+    background-color: #e5e5e5;
+    width: 2000px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns:800px 900px;
+    text-align: center;
+    padding-top: 100px;
+}
+.img-wrapper img {
+    position: relative;
+ }
+.topimg,
+.bottomimg {
+    position: absolute;
+}  
+.topimg{
+    position: relative;
+    top: -35px;
+    left: -200px;
+}
+.toptxt{
+    width: 400px;
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    color: #2B2B2B;
+}
+.note{
+    padding-left: 10px;
+    padding-right: 500px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #979797;
+}
+.steps{
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #5B5B5B;
+    padding-left: 80px;
+} 
+.content2{
+    width: 350px;
+    font-family: 'Product Sans Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #979797;
+
+}
+
+.rectangle{
+    background-image: url(./figma/color1.png);
+}
+.rectangletxt{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px; 
+    font-family: "Product sans";
+    font-weight: 400; 
+    font-size: 40px;
+    font-style: normal;
+    color: #ffff;
+}
+.rectangleparagraph{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    font-family: "Product sans";
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 60px;
+    color: #ffff;
+    
+}
+.container3{
+    background-color: #e5e5e5;
+    text-align: center;
+    margin: 0 auto; 
+    padding: 0 300px;
+}
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    gap: 40px;
+}
+.card2{
+    position: relative;
+    top: -40px;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #ffff;
+    box-shadow: rgba(121, 102, 107, 0.1);
+    border-radius: 20px;
+    text-align: center;
+}
+.cardcontent{
+    padding:20px 20px 10px 20px;
+    font-weight:300;
+    font-family: "Product sans";
+    line-height: 20px;
+    font-size: 12px;
+}
+.card2title{
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    color: #2B2B2B;
+}
+h4{
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #2B2B2B;
+}
+.bill{
+    font-family: 'Product Sans Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 5px;
+    display: flex;
+    justify-content: center;
+    color: #979797;
+}
+.prodfeature{
+    font-family: 'Product Sans Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    color: #979797;
+}
+.card2txt{
+    font-family: 'Product Sans Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 8px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #979797;
+}
+.planlink{
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    color: #ffff;
+    border-radius: 10px;
+    background: #ce0639;
+    padding: 10px 20px;
+    line-height: 18px;
+    font-family: "Product sans medium";
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.bottom{
+    text-align: center;
+    background-color: #e5e5e5;
+}
+.bottomtxt {
+    font-family: "Product sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 20px;
+    color: #2b2b2b;
+
+}
+.smallertxt{
+    margin-bottom: 20px;
+    font-family:"Product Sans Light";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 50px;
+    color: #979797;
+}
+.btn{
+    text-decoration: none;
+    color: #ffff;
+    border-radius: 10px;
+    background: #ce0639;
+    padding: 10px 20px;
+    line-height: 100px;
+    font-family: "Product sans medium";
+    font-weight: 500;
+    font-size: 10px;
+}
+.footer{
+    width: 100%;
+    height: 100%;
+    background-image: url(./figma/color2.png);
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.footerlogo{
+    margin: 50px 0 80px 165px;
+}
+.address , .mail, .contact{
+    margin-top: 100px;
+    color: #ffff;
+    font-family: "Product sans";
+    font-weight: 400;
+    font-style: normal;
+}
+li, .contact{
+    margin-right: 165px;
+}
+
+
+
+
+
+
+
+@media (max-width:1366px) {
+    html , body{
+        width: 100%;
+        margin: 0 ;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .bakerylogo{
+        margin-left: 100px;
+    }
+    ul li a{
+        font-size: 12px;
+        line-height: 10px;
+    }
+    .faqs, .login{
+        margin-right: -50px;
+    }
+    .createacct a{
+        padding: 10px 20px;
+        margin-right: -20px;
+    }
+    .txt{
+        font-size: 30px;
+        padding-top: 80px;
+    }
+    .txt2{
+        font-size: 30px;
+
+    }
+    .grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    h5{
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .cardtxt{
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .toptxt{
+        margin-left: -250px;
+        font-size: 20px;
+        line-height: 30px;
+        width: 250px;
+    }
+    .note{
+        margin-left: -250px;
+        width: 800px;
+        font-size: 10px;
+        line-height: 10px;
+    }
+    .steps{
+        margin-left: -300px;
+        font-size: 14px;
+
+    }
+    .content2{
+        margin-left: -250px;
+        font-size: 10px;
+        width: 300px;
+        line-height: 12px;
+    }
+    .contentcontainer{
+        margin-top: -80px;
+    }
+    .container3{
+        padding: 0 50px;
+    }
+    .cardcontent{
+        padding: 0;
+        width: 100px;
+        line-height :8px ; 
+        font-size: 10px;
+    }
+    .card2title{
+        font-size: 8px;
+        line-height: 10px;  
+    }
+    .bill{
+        font-size: 8px;
+        line-height: 2px;
+       justify-content: center;
+    }
+    h4{
+        font-size: 14px;
+        line-height:30px;
+    }
+    .prodfeature{
+        font-size: 8px;
+        line-height: 20px;
+    }
+    .card2txt{
+        font-size: 6px;
+        line-height: 8px;
+        align-items: center;
+    }
+    .planlink{
+        padding: 8px 18px;
+        font-size: 6px;  
+        line-height: 14px;   
+        justify-content: center; 
+    }
+    .footerlogo{
+    margin: 50px 0 80px 100px;
+    }
+    .address, .mail, .contact{
+        margin-top: 100px;
+
+    }
+    .address, .mail{
+        padding-right: 12px;
+    }
+    li, .contact{
+        margin-right: 100px;
+    }
+    
+}
+
+
+
+@media (max-width:992px) {
+    html , body{
+        width: 100%;
+        margin: 0 ;
+        padding: 0;
+        overflow-x: hidden;
+    }  
+    .imgtxt{
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .CTA{
+        margin-top: -100px;
+    }
+    .img-wrapper img{
+        margin-top: -50px;
+    }
+    .toptxt{
+        margin-left: -250px;
+    }
+    .note{
+        margin-left: -250px;
+    }
+    .cardcontent{
+        font-size: 6px;
+    }
+    .address, .mail, .contact{
+        margin-top: 80px;
+        font-size: 8px;
+    }
+    .address, .mail{
+        padding-right: 10px;
+    }
+
+    
+}
+
+@media (max-width:850px) {
+    .bakerylogo{
+        margin-left: 100px;
+    }
+    ul li a{
+        font-size: 12px;
+        line-height: 10px;
+    }
+    .faqs, .login{
+        margin-right: -50px;
+    }
+    .createacct a{
+        padding: 10px 20px;
+        margin-right: -20px;
+    }
+    .txt{
+        font-size: 20px;
+        padding-top: 80px;
+        line-height: 18px;
+    }
+    .txt2{
+        font-size: 20px;
+
+    }
+    .imgtxt{
+        width: 400px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+    
+    .cardicon img{
+        width: 20px;
+        margin-left: -20px;
+    }
+    .card{
+        border-radius: 20px;
+    }
+    .cardbody{
+        padding: 0;
+        width: 150px;
+    }
+    .cardtxt{
+        font-size: 8px;
+        line-height: 14px;
+        width: 80%;
+    }
+
+   .grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    h5{
+        font-size: 10px;
+        line-height: 10px;
+    }
+    .cardtxt{
+        font-size: 8px;
+        line-height: 15px;
+    }
+    .toptxt{
+        margin-left: -400px;
+        font-size: 18px;
+        line-height: 25px;
+        width: 250px;
+    }
+    .note{
+        margin-left: -400px;
+        line-height: 10px;
+    }
+    .steps{
+        margin-left: -450px;
+        font-size: 14px;
+
+    }
+    .content2{
+        margin-left: -400px;
+        font-size: 12px;
+    }
+    .contentcontainer{
+        margin-top: -80px;
+    }
+    .container3{
+        padding: 0 50px;
+    }
+    .cardcontent{
+        padding: 0;
+        width: 100px;
+        line-height :6px ; 
+        font-size: 8px;
+    }
+    .card2title{
+        font-size: 8px;
+        line-height: 12px;  
+    }
+    .bill{
+        font-size: 6px;
+        line-height: 2px;
+    }
+    h4{
+        font-size: 16px;
+        line-height:30px;
+    }
+    .prodfeature{
+        font-size: 8px;
+        line-height: 20px;
+    }
+    .card2txt{
+        font-size: 6px;
+        line-height: 8px;
+    }
+    .planlink{
+        padding: 8px 8px;
+        font-size: 4px;  
+        line-height: 14px;    
+    }
+    .footerlogo{
+        margin: 25px 0 40px 50px;
+    }
+    .address,.mail, .contact{
+        margin-top: 70px;
+        font-size: 6px;
+    }
+     li, .contact{
+        margin-right: 30px;
+     }
+}
+
+@media (max-width:600px) {
+    .bakerylogo{
+        margin-left: 100px;
+    }
+    ul li a{
+        font-size: 12px;
+        line-height: 10px;
+    }
+    .faqs, .login{
+        margin-right: -50px;
+    }
+    .createacct a{
+        font-size: 8px;
+        padding: 10px 20px;
+        margin-right: -20px;
+    }
+    .txt{
+        font-size: 20px;
+        padding-top: 80px;
+        line-height: 10px;
+    }
+    .txt2{
+        font-size: 20px;
+
+    }
+    .imgtxt{
+        width: 400px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .CTA a{
+        font-size: 8px;
+        padding: 8px 15px;
+    }
+    .cardicon img{
+        width: 20px;
+        margin-left: -20px;
+    }
+    .card{
+        border-radius: 20px;
+    }
+    .cardbody{
+        padding: 0;
+        width: 100px;
+    }
+    .cardtxt{
+        font-size: 6px;
+        line-height: 8px;
+        width: 80%;
+    }
+    .grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    h5{
+        font-size: 6px;
+        line-height: 6px;
+    }
+    .cardtxt{
+        font-size: 4px;
+        line-height: 6px;
+    }
+    .toptxt{
+        margin-left: -400px;
+        font-size: 8px;
+        line-height: 10px;
+        width: 100px;
+    }
+    .note{
+        margin-left: -420px;
+        font-size: 8px;
+        line-height: 8px;
+        width: 800px;
+    }
+    .steps{
+        margin-left: -480px;
+        font-size: 10px;
+
+    }
+    .content2{
+        margin-left: -420px;
+        font-size: 10px;
+    }
+    .content2 img{
+        width: 20px;
+    }
+    .rectangletxt{
+        font-size: 25px;
+    }
+    .rectangleparagraph{
+        font-size: 14px;
+    }
+    .contentcontainer{
+        margin-top: -80px;
+    }
+    .container3{
+        padding: 0 50px;
+    }
+    .cardcontent{
+        padding: 0;
+        width: 50px;
+        line-height :6px ; 
+        font-size: 8px;
+    }
+    .card2title{
+        font-size: 6px;
+        line-height: 8px;  
+    }
+    .bill{
+        font-size: 6px;
+        line-height: 2px;
+    }
+    h4{
+        font-size: 10px;
+        line-height:30px;
+    }
+    .prodfeature{
+        font-size: 5px;
+        line-height: 10px;
+    }
+    .card2txt{
+        font-size: 5px;
+        line-height: 5px;
+    }
+    .planlink{
+        padding: 4px 4px;
+        font-size: 4px;  
+        line-height: 10px;    
+    }
+    .btn{
+        padding: 8px 8px;
+        font-size: 6px;
+    }
+    .footerlogo{
+        margin: 25px 0 40px 50px;
+        width: 100px;
+    }
+    .address,.mail, .contact{
+        margin-top: 70px;
+        font-size: 6px;
+    }
+     li, .contact{
+        margin-right: 30px;
+     }
+}
+
+@media (max-width:450px) {
+    .bakerylogo img{
+        margin-left: -60px;
+        width: 50px;
+    }
+    ul li a{
+        font-size: 8px;
+        line-height: 10px;
+    }
+    .faqs, .login{
+        margin-right: -10px;
+    }
+    .createacct a{
+        font-size: 6px;
+        padding: 8px 20px;
+        margin-right: -20px;
+    }
+    .txt{
+        font-size: 10px;
+        padding-top: 80px;
+        line-height: 4px;
+    }
+    .txt2{
+        font-size: 10px;
+    }
+    .imgtxt{
+        width: 250px;
+        font-size: 8px;
+        line-height: 10px;
+    }
+    .CTA a{
+        font-size: 6px;
+        padding: 8px 15px;
+    }
+    .cardicon img{
+        width: 10px;
+        margin-left: -20px;
+    }
+    .card{
+        border-radius: 20px;
+    }
+    .cardbody{
+        padding: 0;
+        width: 100px;
+    }
+    .cardtxt{
+        font-size: 6px;
+        line-height: 8px;
+        width: 80%;
+    }
+    .grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    h5{
+        font-size: 6px;
+        line-height: 6px;
+    }
+    .cardtxt{
+        font-size: 4px;
+        line-height: 6px;
+    }
+    .toptxt{
+        margin-left: -400px;
+        font-size: 8px;
+        line-height: 10px;
+        width: 100px;
+    }
+    .note{
+        margin-left: -420px;
+        font-size: 8px;
+        line-height: 8px;
+        width: 800px;
+    }
+    .steps{
+        margin-left: -480px;
+        font-size: 10px;
+
+    }
+    .content2{
+        margin-left: -420px;
+        font-size: 10px;
+    }
+    .content2 img{
+        width: 20px;
+    }
+    .rectangletxt{
+        font-size: 25px;
+    }
+    .rectangleparagraph{
+        font-size: 14px;
+    }
+    .contentcontainer{
+        margin-top: -80px;
+    }
+    .container3{
+        padding: 0 50px;
+    }
+    .cardcontent{
+        padding: 0;
+        width: 50px;
+        /* padding: 20px 20px 10px 20px; */
+        line-height :6px ; 
+        font-size: 8px;
+    }
+    .card2title{
+        font-size: 6px;
+        line-height: 8px;  
+    }
+    .bill{
+        font-size: 6px;
+        line-height: 2px;
+    }
+    h4{
+        font-size: 10px;
+        line-height:30px;
+    }
+    .prodfeature{
+        font-size: 5px;
+        line-height: 10px;
+    }
+    .card2txt{
+        font-size: 5px;
+        line-height: 5px;
+    }
+    .planlink{
+        padding:4px 4px;
+        font-size: 4px;  
+        line-height: 10px;    
+    }
+    .btn{
+        padding: 8px 8px;
+        font-size: 6px;
+    }
+    .footerlogo{
+        margin: 25px 0 40px 50px;
+        width: 100px;
+    }
+    .address,.mail, .contact{
+        margin-top: 70px;
+        font-size: 6px;
+    }
+     li, .contact{
+        margin-right: 30px;
+     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .row{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ffff;
+}
+.bakerylogo{
+    margin-left: 140px;
+}
+ul li a{
+  
+    font-family: "Product sans";
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 14px;
+    color: #404c60;
+}
+.faqs, .login, .createacct{
+    margin-top: 10px;
+}
+.faqs, .login{
+    margin-right: -35%;
+}
+
+.createacct a{
+    color: #ffff;
+    border-radius: 10px;
+    background: #ce0639;
+    padding: 14px 30px;
+    line-height: 18.2px;
+    font-family: "Product sans medium";
+    font-weight: 500;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+
+.img{
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(95, 86, 86, 0.8) 0.21%, rgba(126, 119, 119, 0.80443) 29.72%, rgba(225, 255, 255,0)55.34%), url(./figma/bakeryimage.jpg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.txt{
+    font-family: "Product sans";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 44px;
+    color: #ffff;
+    align-items: center;
+    line-height: 30px;
+    margin-left: 175px;
+    top: 200px;
+    
+}
+.txt2{
+    font-family: "Product sans";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 44px;
+    color: #ffff;
+    align-items: center;
+    line-height: 100px;
+    margin-left: 175px;
+    top: 200px;
+    
+}
+.imgtxt{
+    width: 50%;
+    font-family: "Product sans Light";
+    padding: 18% 60px 60px 80px;
+    margin-left: 100px;
+    font-weight: light;
+    font-style: normal;
+    font-size: 20px;
+    color: #ffff;
+    line-height: 30px;
+    align-items: center;
+    
+}
+.img li{
+    display: flex;
+    padding: 50px 0 0 50px;
+    text-decoration: none;
+    list-style: none;
+}
+.content p{
+    text-align: center;
+    font-size: 30px;
+    font-family: "Product sans";
+    color: #2b2b2b;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #e5e5e5;
+}
+.CTA{
+    margin-left: 8.5%;
+    margin-top: -5%;
+}
+.CTA a{
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    color: #ffff;
+    border-radius: 10px;
+    background: #ce0639;
+    padding: 14px 30px;
+    line-height: 18px;
+    font-family: "Product sans medium";
+    font-weight: 500;
+    font-size: 15px;
+
+}
+.stylecontent{
+    color: #ce0639;
+}
+.blogsection{
+    background-color: #e5e5e5;
+    box-sizing: border-box;
+    line-height: 60px;
+    font-family: "Product sans";
+    font-weight: 700;
+    font-size: 44px;
+    color: #2b2b2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 70%;
+    margin: 0 auto;
+    height: 100%;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3%;
+}
+.card{
+    overflow: hidden;
+    padding: 20px;
+    background-color: #ffff;
+    box-shadow: rgba(121, 102, 107, 0.1);
+    border-radius: 20px;
+}
+.cardicon{
+    width:100%;
+    height:auto;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+.cardbody{
+    padding:20px 20px 10px 20px;
+    font-weight:300;
+    font-family: "Product sans";
+    line-height: 24px;
+    font-size: 16px;
+}
+h5{
+    padding-bottom: 15px;
+    color: #5b5b5b;
+    font-family:"Product sans";
+    font-weight: 700;
+    font-style: normal;
+    line-height: 28px;
+    font-size: 20px;
+}
+.cardtxt{
+    font-family: "Product sans Light";
+    font-weight: 300;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+    color: #979797;
+}
+.wrapper{
+    position: relative;
+    background-color: #e5e5e5;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns:45% 55%;
+    text-align: center;
+    padding-top: 100px;
+}
+.img-wrapper  img{
+    position: relative;
+ }
+.topimg,
+.bottomimg{
+    position: absolute;
+}  
+.topimg{
+    position: relative;
+    top: -35px;
+    left: -20px;
+}
+
+.note{
+    padding-left: 10px;
+    padding-right: 50%;
+    font-size: 15px;
+    line-height: 20px;
+    color: #979797;
+}
+.steps{
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #5B5B5B;
+    padding-left: 5%;
+} 
+.content2{
+    width: 45%;
+    font-family: 'Product Sans Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #979797;
+
+}
+.toptxt{
+    width: 40%;
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    color: #2B2B2B;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rectangle{
+    background-image: url(./figma/color1.png);
+}
+.rectangletxt{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px; 
+    font-family: "Product sans";
+    font-weight: 400; 
+    font-size: 40px;
+    font-style: normal;
+    color: #ffff;
+}
+
+.rectangleparagraph{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    text-overflow: clip;
+    font-family: "Product sans";
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 60px;
+    color: #ffff;
+    
+}
+.container3{
+    background-color: #e5e5e5;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 300px;
+}
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3%;
+}
+.card2{
+    top: -40px;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #ffff;
+    box-shadow: rgba(121, 102, 107, 0.1);
+    border-radius: 20px;
+    text-align: center;
+}
+.cardcontent{
+    padding:20px 20px 10px 20px;
+    font-weight:300;
+    font-family: "Product sans";
+    line-height: 20px;
+    font-size: 12px;
+}
+.planlink{
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    color: #ffff;
+    border-radius: 10px;
+    background: #ce0639;
+    padding: 10px 20px;
+    line-height: 18px;
+    font-family: "Product sans medium";
+    font-weight: 500;
+    font-size: 10px;
+}
+.card2title{
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    color: #2B2B2B;
+}
+h4{
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #2B2B2B;
+}
+.bill{
+    font-family: 'Product Sans Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 5px;
+    display: flex;
+    justify-content: center;
+    color: #979797;
+}
+.prodfeature{
+    font-family: 'Product Sans Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    color: #979797;
+}
+.card2txt{
+    font-family: 'Product Sans Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 8px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #979797;
+}
+.bottom{
+    text-align: center;
+    background-color: #e5e5e5;
+}
+.bottomtxt {
+    font-family: "Product sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 20px;
+    color: #2b2b2b;
+
+}
+.smallertxt{
+    margin-bottom: 20px;
+    font-family:"Product Sans Light";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 50px;
+    color: #979797;
+}
+.btn{
+    top: -10px;
+    text-decoration: none;
+    color: #ffff;
+    border-radius: 10px;
+    background: #ce0639;
+    padding: 10px 20px;
+    line-height: 100px;
+    font-family: "Product sans medium";
+    font-weight: 500;
+    font-size: 10px;
+}
+
+
+ .footer{
+    width: 100%;
+    height: 100%;
+    background-image: url(./figma/color2.png);
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.footerlogo{
+    margin-top: 50px;
+    margin-bottom: 80px;
+    margin-left: 165px;
+
+}
+.address , .mail, .contact{
+    margin-top: 100px;
+    color: #ffff;
+    font-family: "Product sans";
+    font-weight: 400;
+    font-style: normal;
+}
+li, .contact{
+    margin-right: 165px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media (max-width:1366px) {
+    html , body{
+        width: 100%;
+        margin: 0 ;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .row{
+        display: flex;
+        justify-content:space-between;
+        list-style: none;
+        width: 100%;
+        height: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        background-color: #ffff;
+    }  
+    .bakerylogo{
+        margin-left:100px ;
+    }
+ul li a{
+    font-family: "Product sans";
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #404c60;
+}
+.faqs, .login, .createacct{
+    margin-top: 8px;
+}
+.faqs, .login{
+    margin-right: -20%;
+}
+.createacct a{
+    color: #ffff;
+    border-radius: 10px;
+    background: #ce0639;
+    padding: 10px 20px;
+    line-height: 18.2px;
+    font-family: "Product sans medium";
+    font-weight: 500;
+    font-size: 15px;
+    /* margin-right: -10px; */
+}
+/* .img{
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(95, 86, 86, 0.8) 0.21%, rgba(126, 119, 119, 0.80443) 29.72%, rgba(225, 255, 255,0)55.34%), url(./figma/bakeryimage.jpg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.txt{
+    position: relative;
+    font-family: "Product sans";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 44px;
+    color: #ffff;
+    align-items: center;
+    line-height: 30px;
+    margin-left: 170px;
+    top: 200px;
+    
+}
+.CTA{
+    margin-left: 12.5%;
+    margin-top: -5%;
+}
+.CTA a{
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    color: #ffff;
+    border-radius: 10px;
+    background: #ce0639;
+    padding: 14px 30px;
+    line-height: 18px;
+    font-family: "Product sans medium";
+    font-weight: 500;
+    font-size: 15px;
+
+}
+.card{
+    overflow: hidden;
+    padding: 10px;
+    background-color: #ffff;
+    box-shadow: rgba(121, 102, 107, 0.1);
+    border-radius: 20px;
+}
+.cardbody{
+    padding:20px 20px 10px 20px;
+    font-weight:300;
+    font-family: "Product sans";
+    line-height: 24px;
+    font-size: 16px;
+}
+h5{
+    position: relative;
+    padding-bottom: 15px;
+    color: #5b5b5b;
+    font-family:"Product sans";
+    font-weight: 700;
+    font-style: normal;
+    line-height: 28px;
+    font-size: 20px;
+}
+.cardtxt{
+    position: relative;
+    font-family: "Product sans Light";
+    font-weight: 300;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+    color: #979797;
+}
+.note{
+    padding-left: 10px;
+    padding-right: 50%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #979797;
+}
+.steps{
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #5B5B5B;
+    padding-left: 10%;
+} 
+.content2{
+    width: 45%;
+    font-family: 'Product Sans Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #979797;
+
+}
+.toptxt{
+    width: 70%;
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    color: #2B2B2B;
+}
+.container3{
+    background-color: #e5e5e5;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 300px;
+}
+.grid2{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 3%;
+}
+.card2{
+    position: relative;
+    top: -40px;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #ffff;
+    box-shadow: rgba(121, 102, 107, 0.1);
+    border-radius: 20px;
+    text-align: center;
+}
+.cardcontent{
+    padding:20px 20px 10px 20px;
+    font-weight:300;
+    font-family: "Product sans";
+    line-height: 10px;
+    font-size: 12px;
+}
+.planlink{
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    color: #ffff;
+    border-radius: 10px;
+    background: #ce0639;
+    padding: 10px 20px;
+    line-height: 10px;
+    font-family: "Product sans medium";
+    font-weight: 500;
+    font-size: 10px;
+}
+.card2title{
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    justify-content: center;
+    color: #2B2B2B;
+}
+h4{
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #2B2B2B;
+}
+.bill{
+    font-family: 'Product Sans Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 5px;
+    display: flex;
+    justify-content: center;
+    color: #979797;
+}
+.prodfeature{
+    font-family: 'Product Sans Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 8px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #979797;
+}
+.card2txt{
+    font-family: 'Product Sans Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 8px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #979797;
+}
+.footer{
+    width: 100%;
+    height: 100%;
+    background-image: url(./figma/color2.png);
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.footerlogo{
+    margin-top: 50px;
+    margin-bottom: 80px;
+    margin-left: 100px;
+
+}
+.address , .mail, .contact{
+    margin-top: 100px;
+    color: #ffff;
+    font-family: "Product sans";
+    font-weight: 400;
+    font-style: normal;
+}
+.address, .mail{
+    padding-right: 10px;
+}
+li, .contact{
+    margin-right: 100px;
+}
+
+
+
+
+
+
+} */
